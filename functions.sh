@@ -40,11 +40,11 @@ validate() {
   if [ $1 -eq 0 ]; then
     echo -e "$G $2 $N"
   else
-    echo -e "$R installation failed $N"
+    echo -e "$R $3 $N"
     exit 1
   fi
 }
 
 #installing httpd service
-yum install httpd -y
-validate $? "installation successful"
+yum install httpds -y
+validate $? "installation successful" "installation failed"
