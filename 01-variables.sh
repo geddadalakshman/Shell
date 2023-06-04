@@ -1,2 +1,3 @@
 DATE=$(date)
 echo "$DATE"
+
