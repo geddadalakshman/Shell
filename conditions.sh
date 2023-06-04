@@ -10,7 +10,7 @@ then
     exit 1
 fi
 
-if [ $userid -ne 0 ]
+if [ "$userid" -ne 0 ]
 then
   echo "you are not root user"
   exit 1
@@ -18,6 +18,7 @@ fi
 #installing httpd service
 yum install httpd -y
 #checking exit status
+# shellcheck disable=SC2181
 if [ $? -eq 0 ]
 then
   echo "httpd service installed success"
