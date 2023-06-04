@@ -16,5 +16,5 @@ validate() {
 }
 
 
-yum install httpds -y
+yum install httpd -y
 validate
