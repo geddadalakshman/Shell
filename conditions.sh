@@ -5,9 +5,9 @@ echo "userid is ${userid}"
 if [ $userid -eq 0 ]
 then
   echo "you are a root user"
-  else
-    echo "you are not root user"
-    exit 1
+else
+  echo "you are not root user"
+  exit 1
 fi
 
 if [ "$userid" -ne 0 ]
@@ -22,7 +22,8 @@ yum install httpd -y
 if [ $? -eq 0 ]
 then
   echo "httpd service installed success"
-  else
-    echo "httpd service installed unsuccessful"
+else
+  echo "httpd service installed unsuccessful"
+  exit 1
 fi
 
