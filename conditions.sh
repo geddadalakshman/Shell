@@ -17,4 +17,11 @@ then
 fi
 #installing httpd service
 yum install httpd -y
-echo $?
+#checking exit status
+if [ $? -eq 0 ]
+then
+  echo "httpd service installed success"
+  else
+    echo "httpd service installed unsuccessful"
+fi
+
