@@ -31,6 +31,8 @@ validate
 #---passing arguments for the same code---
 #!/bin/bash
 #userid=$(id -u)
+#date=$(date +"%F-%H-%M-%S")
+#log_file="$date.log"
 #R="\e[31m"
 #G="\e[32m"
 #N="\e[0m"
