@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #hi lakshman gud evening
 #name=lakshman
 #wish=evening
