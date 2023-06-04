@@ -1,3 +1,3 @@
-DATE=$(date)
+DATE=$(date +%F)
 echo "$DATE"
 
