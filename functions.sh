@@ -18,6 +18,6 @@ validate() {
   fi
 }
 
-
-yum install httpd -y
+#installing httpd service
+yum install httpds -y
 validate
