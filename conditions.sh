@@ -17,4 +17,4 @@ then
 fi
 #installing httpd service
 yum install httpd -y
-echo "`$?`"
+echo $?
