@@ -1,7 +1,7 @@
 echo "please enter user name"
-read -t timeout 1 USERNAME
+read USERNAME
 echo "username is ${USERNAME}"
 
 echo "please enter password"
-read -t timeout 1 PASSWORD
+read -s PASSWORD
 echo "password is ${PASSWORD}"
