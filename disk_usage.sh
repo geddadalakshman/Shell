@@ -10,7 +10,7 @@ while IFS= read -r line; do
     partition=$(echo $disk_usage | cut -d " " -f2)
     echo "usage is $usage"
     echo "partition is $partition"
-#    if [ $usage -ge $disk_threshold ]; then
-#
-#    fi
+    if [ $usage -ge $disk_threshold ]; then
+      echo "High disk usage on $partition: $usage"
+    fi
 done<<<$disk_usage
