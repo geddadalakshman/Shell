@@ -14,3 +14,4 @@ while IFS= read -r line; do
       echo "High disk usage on $partition: $usage"
     fi
 done<<<$disk_usage
+
