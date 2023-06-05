@@ -10,5 +10,5 @@ log_file="$date.log"
 input=$(find "$path" -name "*.log" -type f -mtime +14)
 while IFS= read -r line; do
   echo "Deleting log file: $line" &>>"$log_file"
-  rm -rf $line
+  #rm -rf $line
 done <<< "$input"
