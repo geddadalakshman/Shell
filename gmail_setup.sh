@@ -27,7 +27,8 @@ touch /etc/postfix/sasl_passwd
 
 vi /etc/postfix/sasl_passwd
 #Add the following line to the file:
-[smtp.gmail.com]:587 xyz:AppPassword
+# shellcheck disable=SC1073
+[smtp.gmail.com]:587 geddadalakshman1:mjophdkcqzrdwahr
 
 #Create a Postfix lookup table from the sasl_passwd text file by running the following command:
 postmap /etc/postfix/sasl_passwd
